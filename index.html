@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css"
-    />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,24 +12,23 @@
       crossorigin="anonymous"
     />
     <title>Weather-app</title>
+
+     <link rel="stylesheet" href="src/style.css"
+    />
   </head>
   <div class = "container">
   </div>
   <body>
  <h1>London, Uk</h1>
  <p> Monday 6 Febuary 20.00</p>
- <div class = "row">
-<div class = "col">
- <div class=" current-temperature-symbol"> 
-<img src= "images/clearsky.png"
+ <div class=" temperature-symbol"> 
+<img src="images/clearsky.png"
 />
-<div class = "current-temperature"></div>
+<div class = "current-temperature">
      4 °C | °F  
  <div class ="current states">
- Clear 
- </div>
- <div class = "row">
- <div class = "col-6">
+ Clear
+ </div> 
  <ul>
 <li>
   Participation: 3%
@@ -43,55 +41,15 @@
 </li>
 </ul>
 <hr>
-<div class = "next-5-days">
+<div class = "next-5-days"></div>
 <h2> Next 5 Days</h2>
 <div class ="next-5-days-container">
 <div class = "row">
-<div class = "col">
-<div class = "day">
-  Tue 
-   </div>
-  <div class = "weather-icon">
- <img src = "images/sunny.png"/>
-  <div class ="day-temperature">
-   8&deg; 0&deg; 
-  </div>
-<div class = "col">
-<div class = "day">
-Wed
-</div>
-<div class = "weather-icon">
-<img src =images/sunny-cloud.png />
- <div class ="day-temperature">
-7&deg; 2&deg;
-</div>
-<div class = "col">
- <div class = "day">
- Thur
- </div>
- <div class= "weather-icon">
- <img src = "" />  
- 8&deg; 2&deg;
-</div>
-
-<div class = "col">
-<div class = "day"> 
- Fri
-</div>
-<div class = "weather-icon">
-<img src ="" />
-8&deg; 6&deg;
-</div>
-
-<div class = "col">
- <div class = "day">
- Sat
-</div>
-<div class = "weather-icon">
-<img src ="" />
-10&deg; 5&deg;
-</div>
-</div>
+ <div class = "col">Tue </br><img src = "images/sunny.png"/></br> 8&deg; 0&deg;</div>
+<div class = "col">Wed </br><img src =images/sunny-cloud.png /></br>7&deg; 2&deg;</div>
+<div class = "col"> Thur </br><img src = "images/cloud.gif"/> </br> 8&deg; 2&deg;</div>
+<div class = "col">Fri</br><img src ="images/cloud.gif" /></br>8&deg; 6&deg;</div>
+<div class = "col">Sat</br><img src ="images//cloud.gif"/></br>10&deg; 5&deg;</div>
 </div>
 </div>
 </div>
@@ -101,3 +59,4 @@ Wed
     <script src="src/app.js"></script>
   </body>
 </html>
+  

@@ -1,27 +1,64 @@
-weather-app {
+.weather-app {
   max-width: 600px;
-  margin: 0 auto;
+  margin: centre;
+  margin: 40px auto;
   padding: 30px;
+  border-radius: 15px;
   border: 1px solid;
-  border: radius 5px;
 }
 
 body {
-  background-color: grey;
+  margin: 12px;
+  font-size: 100%;
+  background-color: rgb(254, 227, 188)
+  background: linear-gradient;
 }
 
-container {
-  display: ;
+.container {
+  display: flex;
 }
 
 h1 {
-  display: block;
+  color: pink;
   font-size: 30px;
-  color: grey;
-  width: 100%;
+}
+h2 {
+  text-align: center;
+  font-size: 30px;
+  color: ;
 }
 
-h2 {
-  display: centre;
+. P {
+  font-size: 15px;
+  color: blue;
+}
+
+.temperature-symbol {
+  font: size 40px;
+}
+
+.current-temperature {
+  font-size: 40px;
+  text-align: block;
+  width: 100%;
+  margin-top: 0.25em;
+  color: black;
+}
+
+li {
+  text-align: end;
+  font-size: 25px;
+  list-style-type: none;
+}
+
+.next-5-days {
+  text-align: center;
   font-size: 30px;
+  color: blue;
+}
+
+.next-5-days-container {
+  font-size: 20px;
+  color: blue;
+  display: ro;
 }
