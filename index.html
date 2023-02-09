@@ -11,24 +11,45 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <title>Weather-app</title>
-
+    
      <link rel="stylesheet" href="src/style.css"
     />
+    <title>Weather-app</title>
   </head>
-  <div class = "container">
-  </div>
   <body>
+<div class ="main-container">
+  <div class = "weather-app-wrapper">
+ <div class = "Weather-app">
+
+ <form id="search-form" class="mb-3">
+  <div class="row">
+  <div class="col-9">
+  <input
+ type="search"
+ placeholder="Type a city.."
+ class="form-control"
+id="city-input"
+  autocomplete="off"
+ />
+ </div>
+<div class="col-3">
+<input
+type="submit"
+ value="Search"
+ class="btn btn-primary w-100"
+  />
+   </div>
+ </div>
+ </form>
  <h1>London, Uk</h1>
- <p> Monday 6 Febuary 20.00</p>
- <div class=" temperature-symbol"> 
-<img src="images/clearsky.png"
-/>
+ <div class = "current-date">
+  <div> Monday 6 Febuary 20.00</div>
+  <div>Clear</div>
+ </br>
+<img src=" alt ="clear"/>
 <div class = "current-temperature">
      4 °C | °F  
- <div class ="current states">
- Clear
- </div> 
+ </div>
  <ul>
 <li>
   Participation: 3%
@@ -40,18 +61,21 @@
  Wind 2mph
 </li>
 </ul>
-<hr>
-<div class = "next-5-days"></div>
+ </div>
+ </div>
+ </div>
+<hr width="600">
 <h2> Next 5 Days</h2>
+</br>
 <div class ="next-5-days-container">
 <div class = "row">
- <div class = "col">Tue </br><img src = "images/sunny.png"/></br> 8&deg; 0&deg;</div>
-<div class = "col">Wed </br><img src =images/sunny-cloud.png /></br>7&deg; 2&deg;</div>
+ <div class = "col">Tue </br><img src = "images/sun2.png"/></br> 8&deg; 0&deg;</div>
+<div class = "col">Wed </br><img src ="images/sunny-cloud.png"/></br>7&deg; 2&deg;</div>
 <div class = "col"> Thur </br><img src = "images/cloud.gif"/> </br> 8&deg; 2&deg;</div>
 <div class = "col">Fri</br><img src ="images/cloud.gif" /></br>8&deg; 6&deg;</div>
 <div class = "col">Sat</br><img src ="images//cloud.gif"/></br>10&deg; 5&deg;</div>
 </div>
-</div>
+<div>
 </div>
 <small> 
   <a open-source code by Adama Bangura></a>
