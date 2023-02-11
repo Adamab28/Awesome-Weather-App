@@ -1,21 +1,24 @@
-
 body {
-  margin:15px;
-  font-size:100%;
-  background-color: 
-  line-height:28px;
-  background color:rgba(255,255,255,0.85);
-   color:#0d0c22;
-   font-family:arial,sans-serif;
+  margin: 12px;
+  font-size: 100%;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgb(43, 50, 178) 0%,
+    rgb(20, 136, 204) 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  max-width: 700px;
 }
-
 
 .main-container {
-  max-width: ;
-
+  max: width 50px;
 }
-  display:center;
-  max-width: 600px;
+display: center;
+max-width: 600px;
 
 .weather-app-wrapper {
   max-width: 600px;
@@ -26,50 +29,64 @@ body {
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 5px;
-  max-width:500px;
+  padding: 20px;
 }
 
+.current-date {
+  color: white;
+  font-size: 15px;
+}
+.float-left {
+  font-size: 40px;
+  margin-right: 10px;
+}
 
- .current-date {
-  color:grey;
-font-size:15px;
- }
+.units {
+  position: relative;
+  font-size: 15px;
+  top: -5px;
+}
 
 h1 {
-  color: purple;
-  font-size:30px;
-  font-weight:100;
-  text-align:left;
-  line-height:25.5px;
+  color: white;
+  font-size: 30px;
+  font-weight: 100;
+  text-align: left;
+  line-height: 25.5px;
 }
 h2 {
-  text-align:center;
-  font-size:20px;
-  color:purple ;
+  text-align: center;
+  font-size: 20px;
+  color: white;
 }
 
 ul {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 .current-temperature {
   font-size: 30px;
   text-align: block;
   width: 50%;
   margin-top: 0.25em;
-  color: grey;
+  color: white;
 }
 
 li {
-  text-align:right;
+  text-align: right;
   font-size: 15px;
   list-style-type: none;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 .next-5-days-container {
   font-size: 20px;
-  color: grey;
-  display: ro;
+  color: white;
+  display: center;
+}
+
+.gethub-link {
+  font-size: 15px;
+  color: black;
 }
