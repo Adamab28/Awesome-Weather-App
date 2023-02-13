@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -11,7 +11,7 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    
+     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
      <link rel="stylesheet" href="src/style.css"
     />
     <title>Weather-app</title>
@@ -20,7 +20,7 @@
 <div class ="main-container">
   <div class = "weather-app-wrapper">
  <div class = "Weather-app">
- <form id="search-form" class="mb-3">
+ <form id="search-form" class="mb-3"> 
   <div class="row">
   <div class="col-9">
   <input
@@ -40,33 +40,28 @@ type="submit"
    </div>
  </div>
  </form>
- <h1 id = "city-name"></h1>
+ <div class ="overview">
+ <h1 id = "city"></h1>
  <div class = "current-date">
-  <div id="discription"> Monday 6 Febuary 20.00</div>
-  <div>Clear</div>
- </br>
+  <div id = "discription"></div>
+ <div class ="row">
+ <div class ="col-6">
 <img src="images/clear.png" alt ="clear"
  width = 100px
 class= "float-left"
 />
-<div class = "float-left"><strong  id ="tempearature"> 4 </stronge>
-  <small class = "units"> °C | °F </small>  
+<div class = "float-left"><strong  id ="tempearature"></stronge>
+<div class = "units"><a href="#" id="celsius-link"></a>°C |  
+ <a href="#" id="fahrenheit-link">°F</a></div>  
+ </div>
+ </div>
  </div>
  <ul>
-<li>
-  Participation: 3%
- </li>
- <li>
- Humidity: 68%
- </li>
- <li>
- Wind 2mph
-</li>
+ <li>Humidity: <span id = "Humidity"></span>%</li>
+ <li>Wind: <span id = "wind"> </span>mph</li>
 </ul>
  </div>
- </div>
- </div>
-<hr width="700">
+<hr width="540">
 <h2> Next 5 Days</h2>
 </br>
 <div class ="next-5-days-container">
@@ -82,10 +77,11 @@ class= "float-left"
 <div>
 </div>
 </br>
+<small>
  <div class = "github-link">
  <a href="https://github.com/Adamab28/Awesome-Weather-App"
  >Open-source code </a>
-by Adama Bangura
+by Adama Bangura</small>
 </div>
 <div>
 </div>
