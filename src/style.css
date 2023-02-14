@@ -109,7 +109,7 @@ li::second-letter {
 
 .gethub-link {
   font-size: 15px;
-  color: white;
+  color: black;
 }
 .temperature .active {
   color: #000000;
@@ -122,4 +122,7 @@ li::second-letter {
 
 hr {
   color: #885df1;
+}
+.w-550 {
+  width: 100% !important;
 }
