@@ -1,4 +1,3 @@
-function formateDate (timestamp)
 function formatDate(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
@@ -9,44 +8,30 @@ function formatDate(timestamp) {
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
-  let days = [
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    
-  ];
+
+  let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
 
-
 function displayTemperature(response) {
-  let temperatureElement = document.querySlecetor("#current-temperature");
+  let temperatureElement = document.querySelector("#current-temperature");
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
- let iconElement = document.querySelector("#icon");
+  let iconElement = document.querySelector("#icon");
 
- 
-
-  temperatureElement.innerHTML = Math.round(response.data.main.temp);
+  temperatureElement.innerHTML = Math.round(response.data.temperature.current);
   cityElement.innerHTML = response.data.city;
   descriptionElement.innerHTML = response.data.description;
-  humidityElement.innerHTML = response.data.main.humidity;
+  humidityElement.innerHTML = response.data.temperature.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
-  dateElement.innerHTML = formateDate(response.data.time * 1000);
-  iconElement.setAttribute("src", `${response.data.weather[0].description.icon_url}`);
-  iconElement.setAttribute("alt", `${response.data.weather.description}`)
-} 
-
-
-  celsiusTemperature = response.data.temperature.current;
-
-
+  dateElement.innerHTML = formatDate(response.data.time * 1000);
+  iconElement.setAttribute("src", `${response.data.condition.icon_url}`);
+  iconElement.setAttribute("alt", `${response.data.condition.description}`);
+}
 
 function search(city) {
   let apiKey = "t33fdeba1d36f24d4ao348fa86c60bb5";
@@ -88,4 +73,4 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
-search ("London");
+search("London");

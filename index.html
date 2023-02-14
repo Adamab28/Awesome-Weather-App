@@ -3,55 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
-    <link rel="stylesheet" href="src/style.css" />
-    <title>Weather-App</title>
- </head>
-  <body>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+rel="stylesheet"
+integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+crossorigin="anonymous"
+ />
+<script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+<link rel="stylesheet" href="src/style.css" />
+<title>Weather-App</title>
+</head>
+<body>
  <div class="container">
- <div class="weather-app-wrapper">
-   <div class="weather-app">
-  <form id="search-form" class="mb-3">
-   <div class="row">
-     <div class="col-9">
-  <input
-   type="search"
-   placeholder="Type a city"
-    class="form-control"
-     id="city-input"
-    autocomplete="off"
-       />
-      </div>
-     <div class="col-3">
-       <input
-       type="submit"
- value="Search"
+<div class="weather-app-wrapper">
+<div class="weather-app">
+<form id="search-form" class="mb-3">
+<div class="row">
+ <div class="col-9">
+ <input
+type="search"
+placeholder="Type a city"
+class="form-control"
+id="city-input"
+autocomplete="off"
+ />
+ </div>
+<div class="col-3">
+ <input
+type="submit"
+value="Search"
 class="btn btn-primary w-100"
-                />
-              </div>
-            </div>
-          </form>
-          <div class="overview">
-            <h1 id="city"></h1>
-            <ul>
+ />
+ </div>
+ </div>
+ </form>
+<div class="overview">
+<h1 id="city"></h1>
+ <ul>
  <li id="date"></li>
  <li id="description"></li>
  </ul>
  </div>
  <div class="row">
-   <div class="col-6">
+ <div class="col-6">
  <img src="images/clear.png" alt ="clear"width = 100px  id = "icon"/>
-<strong  id ="temperature"></stronge>      
- <strong id="current-temperature"></strong
-  ><span class="units"
- ><a href="#" id="celsius-link" class="active">°C</a> |
+ <div class = "temperature"><strong id="current-temperature"></strong>
+<span class="units">
+<a href="#" id="celsius-link" class="active">°C</a> |
  <a href="#" id="fahrenheit-link">°F</a></span>
  </div>
  </div>
@@ -59,13 +58,12 @@ class="btn btn-primary w-100"
  <div class="col-9">
  <ul>
  <li>Humidity: <span id="humidity"></span>%</li>
-  <li>Wind: <span id="wind"></span> km/h</li>
-  </ul>
-  </div>
- 
-<hr width="500"></hr>
+<li>Wind: <span id="wind"></span> km/h</li>
+</ul>
+ </div>
+<hr width="580"></hr>
 </br>
-<h2> Next 5 Days</h2>
+<h2><stronge>Next 5 Days</stronge></h2>
 </br>
 <div class ="next-5-days-container">
 <div class = "row">
@@ -75,16 +73,15 @@ class="btn btn-primary w-100"
 <div class = "col">Thur</br><img src ="images/cloudy.png"  width="35px"/></br>8&deg; 6&deg;</div>
 <div class = "col">Fri</br><img src ="images//cloudy.png" width="35px"/></br>10&deg; 5&deg;</div>
 </div>
-</br>
 </div>
+</br>
 <small>
  <div class = "github-link">
- <a href="https://github.com/Adamab28/Awesome-Weather-App"
- >Open-source code </a>
+ <a href="https://github.com/Adamab28/Awesome-Weather-App">
+ Open-source code </a>
 by Adama Bangura</small>
 </div>
- </div>
-   <script src="src/app.js"></script>
-  </body>
+ <script src="src/app.js"></script>
+ </body>
 </html>
   
