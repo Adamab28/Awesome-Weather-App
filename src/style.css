@@ -6,6 +6,7 @@ body {
   background: linear-gradient(rgb(43, 50, 178) 0%, rgb(192, 206, 214) 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: 1500px;
   padding: 30px;
 }
 
@@ -46,16 +47,23 @@ li::second-letter {
 .weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
+  border-radius: 20px;
 }
 
-.weather-App {
+.weather-app {
   max-width: 600px;
   margin: 30px auto;
   padding: 20px;
-  border: 1px solid #4e19d3;
+  border: 2px solid #885df1;
   border-radius: 10px;
 }
 
+.container {
+  max-width: 600px;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+}
 .overview {
   margin-bottom: 15px;
 }
@@ -110,4 +118,8 @@ li::second-letter {
 
 .temperature .active:hover {
   text-decoration: none;
+}
+
+hr {
+  color: #885df1;
 }

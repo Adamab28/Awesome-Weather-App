@@ -9,7 +9,15 @@ function formatDate(timestamp) {
     minutes = `0${minutes}`;
   }
 
-  let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
@@ -25,7 +33,7 @@ function displayTemperature(response) {
 
   temperatureElement.innerHTML = Math.round(response.data.temperature.current);
   cityElement.innerHTML = response.data.city;
-  descriptionElement.innerHTML = response.data.description;
+  descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = response.data.temperature.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
   dateElement.innerHTML = formatDate(response.data.time * 1000);
