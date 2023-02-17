@@ -3,10 +3,9 @@ body {
   font-size: 100%;
   font-family: "Open Sans", sans-serif;
   height: 100px;
-  background: linear-gradient(rgb(43, 50, 178) 0%, rgb(192, 206, 214) 100%);
+  background-color: white;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 1500px;
+  background-size: 600px;
   padding: 30px;
 }
 
@@ -56,13 +55,18 @@ li::second-letter {
   padding: 20px;
   border: 2px solid #885df1;
   border-radius: 10px;
+  background: linear-gradient(
+    to bottom,
+    rgb(127, 133, 243) 0%,
+    rgb(130, 179, 208) 100%
+  );
 }
 
 .container {
   max-width: 600px;
   display: block;
   position: relative;
-  margin: 0 auto;
+  margin: ;
 }
 .overview {
   margin-bottom: 15px;
@@ -90,7 +94,7 @@ li::second-letter {
   bottom: 2px;
 }
 
-.date {
+.weather-forecast-date {
   color: white;
   font-size: 15px;
 }
@@ -101,12 +105,10 @@ li::second-letter {
   text-align: left;
 }
 
-.next-5-days-container {
-  font-size: 20px;
-  color: white;
-  display: center;
+.weather-forecast-temperature-max {
 }
-
+.weather-forecast-temperature-min {
+}
 .gethub-link {
   font-size: 15px;
   color: black;
