@@ -24,19 +24,41 @@ function formatDate(timestamp) {
 
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
-  let forecastHTML = `<div class = "row">`;
-  forecastHTML =
-    forecastHTML +
-    `
-<div class = "col-2">
-<div class = "col">Mon</br> <img src = "images/sunny.png" width="35px"/><br> 8&deg; 0&deg;</div>
+  let days = [ "Fri", "Sat", "Sun", "Mon", "Tue",];
+
+let forecastHTML = `<div class = "row">`;
+ daysfor.Each(function (day) {
+ forecastHTML =
+forecastHTML +
+      `
+<div class="col-2">
+        <div class="weather-forecast-date">Mon</div>
+        <img
+          src=img src = "images/sunny.png" width="35px"/>
+          alt=""
+          width="35"
+        />
+        <div class="weather-forecast-temperatures">
+          <span class="weather-forecast-temperature-max"> 8° </span>
+          <span class="weather-forecast-temperature-min"> 0° </span>
+        </div>
+      </div>
+  `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+  console.log(forecastHTML);
+}
 <div>
 </div>
 `;
+});
+ forecastHTML = forecastHTML + `</div>`;
+ forecastHTML = forecastHTML +`
+ console.log(forecastHTML);
 
-  forecastHTML = forecastHTML + `</div>`;
-  forecastHTML.innerHTML = forecastHTML;
-}
+
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#current-temperature");
   let cityElement = document.querySelector("#city");
