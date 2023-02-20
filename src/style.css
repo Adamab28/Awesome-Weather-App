@@ -58,7 +58,7 @@ li::second-letter {
   background: linear-gradient(
     to bottom,
     rgb(127, 133, 243) 0%,
-    rgb(130, 179, 208) 100%
+    rgb(23, 165, 247) 100%
   );
 }
 
@@ -66,8 +66,8 @@ li::second-letter {
   max-width: 600px;
   display: block;
   position: relative;
-  margin: ;
 }
+
 .overview {
   margin-bottom: 15px;
 }
@@ -90,29 +90,30 @@ li::second-letter {
 .weather-temperature .units {
   position: relative;
   font-size: 15px;
-  top: -5px;
-  bottom: 2px;
+  top: -6px;
+  bottom: -5px;
+}
+
+.weather-forecast {
+  text-align: center;
+  margin-top: 20px;
 }
 
 .weather-forecast-date {
   color: white;
-  font-size: 15px;
+  font-size: 16px;
+  opacity: 0.8;
 }
 
-.float-left {
-  font-size: 20px;
-  margin-right: 10px;
-  text-align: left;
+.weather-forecast-temperature-min {
+  font-size: 15px;
+  opacity: 0.5;
 }
 
 .weather-forecast-temperature-max {
-}
-.weather-forecast-temperature-min {
-}
-.gethub-link {
   font-size: 15px;
-  color: black;
 }
+
 .temperature .active {
   color: #000000;
   cursor: default;
@@ -123,8 +124,14 @@ li::second-letter {
 }
 
 hr {
-  color: #885df1;
+  color: #0f0725;
 }
+
 .w-550 {
   width: 100% !important;
+}
+
+.gethub-link {
+  font-size: 15px;
+  color: black;
 }
